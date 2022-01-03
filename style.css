@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+/*====================================================*/
+body {
+    padding: 0;
+    margin: 0;
+    background: #f0f2f5;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: Helvetica, sans-serif;
+}
+/*====================================================*/
+body, input, button {
+    font-family: Helvetica, sans-serif;
+}
+/*====================================================*/
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    padding-bottom: 200px;
+    padding-top: 130px;
+    align-items: center;
+    gap: 40px;
+}
+/*====================================================*/
+.intro {
+    margin-bottom: 50px;
+}
+/*====================================================*/
+.logo {
+    display: block;
+    max-width: 400px;
+    height: 100%;
+    margin: -28px;
+} 
+/*====================================================*/
+h2 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #1c1e21;
+    max-width: 800px;
+    line-height: 32px;
+}
+/*====================================================*/
+form {
+    padding: 16px 16px 24px 16px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, .1), 0 8px 
+    16px rgb(0, 0, 0, .1);
+    border-radius: 16px;
+}
+/*====================================================*/
+form a, input{
+    display: block;
+}
+/*====================================================*/
+input {
+    width: 100%;
+    display: block;
+    margin-bottom: 12px;
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    width: 100%;
+    outline: none;
+}
+/*====================================================*/
+input:focus { 
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+/*====================================================*/
+input[placeholder]{
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+}
+/*====================================================*/
+input::placeholder{
+    font-size: 18px;
+    color: #1d2129;
+    opacity: 0.6;
+}
+/*====================================================*/
+form a {
+    font-size: 14px;
+    color: #1877f2;
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    text-decoration: none;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #dadde1;
+}
+/*====================================================*/
+form a:hover {
+    text-decoration: underline;
+}
+/*====================================================*/
+.logIn, .create-new-account {
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+/*====================================================*/
+.logIn {
+    font-size: 20px;
+    width: 100%;
+    background: #1877f2;
+}
+/*====================================================*/
+.logIn:hover {
+    background: #166fe5;
+}
+/*====================================================*/
+.create-new-account {
+    width:70%;
+    font-size: 17px;
+    background: #42b72a;
+    margin: 0 auto;   
+    margin-top: 24px;
+    margin-left:45px;
+} 
+/*====================================================*/
+.create-new-account:hover {
+    background: #36a420;
+}
+/*====================================================*/
+p, p > a {
+    color:#1c1e21;
+    font-size: 14px;
+    margin: 25px 0 0 0;
+}
+/*====================================================*/
+p > a {
+    font-weight: bold;
+    text-decoration: none;
+}
+/*====================================================*/
+p > a:hover {
+    text-decoration: underline;
+}
+/*====================================================*/
+footer { 
+    background: #fff;
+    font-size: 14px;
+    color: #737373;
+    margin-left: -50px;
+    margin-right: -50px;
+    text-align: center;
+    height: 219px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*========= Responsabilidade ===========*/
+@media (max-width) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .logo {
+        margin: -20 auto;
+    }
+    .intro {
+        text-align: center;
+        margin: 0 auto;
+    }
+    p {
+        text-align: center;
+    }
+    form {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
