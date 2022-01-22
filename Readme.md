@@ -3,7 +3,7 @@
 ## Tecnologias usadas
 
 * HTML
-* CSS Responsivel
+* CSS Responsivo
 * JavaScript 
 
 
